@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,700;1,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+   color: rgb(243, 241, 241);
+   text-align: center; 
+   font-size: 2rem;
+   
+   
+}
+
+div{
+    margin: 0.5rem;
+}
+
+
+.contenedor{
+    padding: 1rem;
+    height: 100rem;
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: repeat (5, fr);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 88%, rgba(255,255,255,1)  100%);
+    grid-template-areas:
+    "be be be be" "be be be bc"
+    "d d d d" "e e e e" "f f f f";
+    
+               
+}
+
+
+  
+.header {
+    background-color: rgb(3, 0, 0);
+    padding: 3rem 4rem;
+    color:rgb(243, 241, 241);
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    display: flex;
+   justify-content: space-between;
+  align-items: center;
+  }
+
+  .logo-image{
+    
+    width: auto;
+    height: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
+.img-fluid{
+    
+    height:8rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    
+    
+   
+  }
+  
+  ul li {
+    display: inline-block;
+    margin: 0 1.4rem;
+   
+    padding: 1rem;
+   
+    border-radius: 1rem;
+    justify-content: space-evenly;
+  }
+  
+  ul li a {
+    color: rgb(223, 52, 52);
+    text-decoration: none;
+  }
+  
+  ul li:hover {
+    color: rgb(248, 248, 248);
+    background-color: rgb(85, 83, 83);
+    text-decoration: none;
+  }
+
+  ul .active:hover{
+   
+    color: white;
+  }
+
+.contenido {
+/*background-color: rgb(0, 0, 0);*/
+grid-area: be;
+display: grid;
+height: 80rem;
+margin:0;
+padding:0;
+
+}
+
+ #video{
+    display:grid;
+    margin: 0;
+    width: 80%;
+    height:auto;
+    position: relative;
+
+   
+}
+
+
+.titulo {  
+     
+   margin: 0rem;
+   margin-top: -85rem;
+   margin-left: 33%;
+  position: absolute;
+ }
+
+ .titulo img{
+    width: 95%;
+    height: auto;
+}
+ 
+
+
+.section-1{
+    font-family: "Raleway", sans-serif;
+    font-size: 700;
+    font-weight: bold;
+    padding: 2rem 3rem 0rem 3rem;
+    Color: rgba(8, 8, 8, 0.356);
+
+grid-area: d;
+display: grid;
+  
+grid-template-columns: repeat(4, 1fr);
+align-content: space-between;
+}
+
+.bajada{
+    margin-top: 8rem;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size:4rem;
+    color:rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 25px rgb(254, 254, 255), 0 0 5px rgb(133, 133, 173);
+}
+
+.item{
+border: 2px solid grey;
+padding-top: 10px; 
+background-color: rgb(187, 187, 187);
+border-radius: 1rem;
+height: 29rem;
+color:rgb(0, 0, 0);
+box-shadow: 8px 6px 6px 2px rgba(28, 28, 29, 0.2);
+
+
+}
+
+.item img{
+width: 95%;
+height: 22rem;
+object-fit: cover;
+border-radius: 1rem;
+filter: grayscale(0%);
+}
+
+.item img:hover{
+  filter: grayscale(50%);
+  box-shadow: 6px 6px 6px 2px rgba(28, 28, 29, 0.2);
+  border: solid 2px rgb(189, 186, 186);
+      }
+
+.section-2{
+grid-area: e;
+display: grid;
+padding-top: 9rem;
+font-family: "Raleway", sans-serif;
+font-size: 3.5rem;
+font-weight: 600;
+color:rgb(0, 0, 0);
+text-shadow:  4px 4px 30px rgb(255, 255, 255), 0 0 3em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+
+}
+
+
+.section-3{
+background-color: rgb(255, 255, 255);
+grid-area: f;
+display:grid;
+padding: 1rem;
+color: rgb(0,0,0)
+
+
+}
+
+.datos{
+    font-family: "Raleway", sans-serif;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+ line-height: 1.3;
+
+}
+
+.footer{
+    height: 20rem;
+    background-color: rgb(126, 120, 118);
+    display:grid;
+
+    grid-template-columns:  1fr 3fr 1.5fr;
+    padding: 0;
+    box-shadow: 6px 6px 6px 2px rgba(28, 28, 29, 0.2);
+    }
+
+
+    #nav-footer{
+        display: grid;
+        font-family: "Raleway", sans-serif;
+        font-size: 5rem;
+        font-weight: 800;
+        font-size: 2.5rem;
+        margin-top: 8rem;
+     
+                           }
+
+    
+
+    .footer img{
+     
+     padding-top: 2rem;
+     height: 17rem;   
+    }
+    
+   
+.visited{
+    text-decoration: none;
+}
+ .social{
+     color:rgb(0, 0, 0);
+     font-size:3rem;
+     font-weight: bold;
+     font-family: "Raleway", sans-serif;
+    margin-top: 4rem;
+     color: #fff;
+     text-decoration: none;
+ }
+
+ .social img{
+     height: 6rem;
+     padding: 0.51rem;
+     filter: grayscale(80%);
+   }
+
+ .social img:hover{
+     box-shadow: 1px 2px 2px 4px rgba(0, 0, 250, 0.2); 
+     border-radius: 1rem;
+     filter: grayscale(0%);
+ }
+
+ .copyright{
+    color:rgb(0, 0, 0);
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    margin-top: -2rem;
+    
+}
+
+A:link {
+    text-decoration: none; }
+
+/*DESDE ACA RESPONSIVE*/
+
+@media screen and (max-width:767px) {
+    .contenedor .contenido {
+        grid-column: 1 / 1;     
+    }
+    section {
+        grid-column: 1 / 1;    
+
+    }
+
+    ul {
+    flex-direction: row;    
+    }
+
+    .header{
+
+        flex-direction: column;   
+        padding: 2rem;     
+    }
+   
+
+     .titulo {  
+     
+        margin: 0rem;
+        margin-top: -85rem;
+        margin-left: 1rem;
+       position: absolute;
+      }
+      
+
+    .section-1{
+        grid-template-columns: repeat(2, 1fr);
+        padding:0;
+    }
+
+    footer .footer{
+    grid-template-columns: repeat(2, 1fr);
+    height: 60rem; 
+   }
+}
+
+@media screen and (max-width: 540px) {
+   
+.contenedor{
+    height: 30rem;
+}
+    
+    .contenedor .contenido {
+          grid-column: 1 / 1;   
+          height: 25rem;  
+      }
+
+      #video{
+        display:grid;
+        margin: 0;
+        width: 100%;
+        height:auto;
+        position: relative;
+    }
+    
+    .titulo {  
+     
+        margin: 0rem;
+        margin-top: -28rem;
+        margin-left: -1%;
+       position: absolute;
+      }
+  
+      .footer{
+          grid-template-columns: repeat (2, 1fr);
+          height: 70rem;
+      }
+  }
+
